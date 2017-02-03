@@ -46,6 +46,7 @@
             android:drawablePadding="16dp"
             android:layout_margin="16dp"
             android:radius="10dp"
+            android:onClick="iniciarRecorrido"
             />
 
         <Button

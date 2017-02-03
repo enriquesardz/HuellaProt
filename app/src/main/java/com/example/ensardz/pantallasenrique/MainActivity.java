@@ -1,5 +1,6 @@
 package com.example.ensardz.pantallasenrique;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -97,5 +98,10 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void iniciarRecorrido(View view){
+        Intent intent = new Intent(this, NuevoReporte.class);
+        startActivity(intent);
     }
 }
