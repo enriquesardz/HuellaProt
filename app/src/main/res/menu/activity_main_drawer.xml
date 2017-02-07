@@ -3,33 +3,47 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_home"
+            android:title="@string/nav_inicio"
+            />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_notificaciones"
+            android:icon="@drawable/ic_notificacion"
+            android:title="@string/nav_notificaciones" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_reporte"
+            android:icon="@drawable/ic_reporte"
+            android:title="@string/nav_hacer_reporte" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_recorrido"
+            android:icon="@drawable/ic_recorrido"
+            android:title="@string/nav_iniciar_recorrido" />
+        <item
+            android:id="@+id/nav_configuracion"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/nav_configuracion" />
+        <item
+            android:id="@+id/nav_sistema"
+            android:icon="@drawable/ic_check_aceptar"
+            android:title="@string/nav_datos_sistema"/>
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/nav_acerca_de"
+                android:icon="@drawable/ic_informacion"
+                android:title="@string/nav_acerca_de" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_ayuda"
+                android:icon="@drawable/ic_help_96"
+                android:title="@string/nav_ayuda" />
+            <item
+                android:id="@+id/nav_cerrar_sesion"
+                android:icon="@drawable/ic_cerrar_sesion"
+                android:title="@string/nav_cerrar_sesion"
+                />
         </menu>
     </item>
 

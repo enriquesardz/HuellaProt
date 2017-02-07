@@ -5,4 +5,22 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- Strings para el nav bar-->
+    <string name="nav_inicio">Inicio</string>
+    <string name="nav_notificaciones">Notificaciónes</string>
+    <string name="nav_hacer_reporte">Hacer Reporte</string>
+    <string name="nav_iniciar_recorrido">Iniciar recorrido</string>
+    <string name="nav_configuracion">Configuracion</string>
+    <string name="nav_datos_sistema">Datos del sistema</string>
+    <string name="nav_acerca_de">Acerca de</string>
+    <string name="nav_ayuda">Ayuda</string>
+    <string name="nav_cerrar_sesion">Cerrar sesión</string>
+
+    <!-- Strings para Escaner Fragment -->
+    <string name="titulo_escaner_barra">Escanear Código de Barras</string>
+    <string name="titulo_escaner_qr">Escanear Código QR</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

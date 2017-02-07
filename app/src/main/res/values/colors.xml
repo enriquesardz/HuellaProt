@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">@color/fimeVerdeClaro</color>
+    <color name="colorPrimaryDark">@color/fimeVerde</color>
+    <color name="colorAccent">#07AD9D</color>
 
     <!-- Colores de VIEWS -->
     <color name="fimeVerde">#7C9B7E</color>
+    <color name="fimeVerdeObscuro">#62796E</color>
     <color name="fimeVerdeClaro">#DFF4E9</color>
 
     <!-- Colores para TEXTO -->
-    <color name="txtVerdeObscuro">#62796E</color>
+    <color name="txtVerdeObscuro">#62796e</color>
     <color name="txtBlanco">#FFFFFF</color>
 </resources>
