@@ -12,4 +12,5 @@
     <!-- Colores para TEXTO -->
     <color name="txtVerdeObscuro">#62796e</color>
     <color name="txtBlanco">#FFFFFF</color>
+    <color name="txtTitulo">#747474</color>
 </resources>

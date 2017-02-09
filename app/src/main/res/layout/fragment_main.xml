@@ -35,44 +35,55 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="2">
-            <Button
-                android:id="@+id/recorrido_button"
-                android:layout_width="260dp"
+            android:layout_weight="2"
+            android:layout_margin="16dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_menu_camera"
-                android:text="Iniciar Recorrido"
-                android:background="@drawable/boton_verde_black_border"
-                android:textColor="@color/txtBlanco"
-                android:drawablePadding="16dp"
-                android:layout_margin="16dp"
-                android:onClick="recorridoOnClick"
-                />
-
-            <Button
-                android:id="@+id/agregar_maestro_button"
-                android:layout_width="260dp"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/recorrido_button"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_camera"
+                    android:text="Iniciar Recorrido"
+                    android:background="@drawable/boton_verde_black_border"
+                    android:textColor="@color/txtBlanco"
+                    android:drawablePadding="16dp"
+                    android:onClick="recorridoOnClick"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_menu_camera"
-                android:text="Agregar maestro"
-                android:background="@drawable/boton_verde_black_border"
-                android:textColor="@color/txtBlanco"
-                android:drawablePadding="16dp"
-                android:layout_margin="32dp"
-                />
+                android:layout_weight="1">
 
-            <Button
-                android:id="@+id/nuevo_reporte_button"
-                android:layout_width="260dp"
+                <Button
+                    android:id="@+id/agregar_maestro_button"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_camera"
+                    android:text="Agregar maestro"
+                    android:background="@drawable/boton_verde_black_border"
+                    android:textColor="@color/txtBlanco"
+                    android:drawablePadding="16dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_menu_camera"
-                android:text="Nuevo Reporte"
-                android:background="@drawable/boton_verde_black_border"
-                android:textColor="@color/txtBlanco"
-                android:drawablePadding="16dp"
-                android:layout_margin="16dp"
-                />
-
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/nuevo_reporte_button"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_camera"
+                    android:text="Nuevo Reporte"
+                    android:background="@drawable/boton_verde_black_border"
+                    android:textColor="@color/txtBlanco"
+                    android:drawablePadding="16dp"
+                    />
+            </LinearLayout>
 
         </LinearLayout>
 

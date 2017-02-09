@@ -1,5 +1,6 @@
 package com.example.ensardz.pantallasenrique;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentTransaction;
@@ -23,13 +24,15 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MainFragment mainFragment = new MainFragment();
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, mainFragment);
-        fragmentTransaction.commit();
+        if(savedInstanceState == null){
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.fragment_container, new MainFragment())
+                    .commit();
+        }
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
@@ -83,25 +86,20 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        //TODO: Al reemplazar el fragment, parte del fragment layout se corta, posiblemente por la barra superior?
-        //TODO: Los siguientes botones solo reemplazan el frame_container, por lo que el titulo de la barra superior no se actualiza.
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-
         if (id == R.id.nav_notificaciones) {
             Toast.makeText(this, "Notificacion", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_reporte) {
-            getSupportActionBar().setTitle("Nuevo Reporte");
-            NuevoReporteFragment reporteFragment = new NuevoReporteFragment();
-            fragmentTransaction.replace(R.id.fragment_container, reporteFragment);
-            fragmentTransaction.commit();
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, new NuevoReporteFragment())
+                    .commit();
 
         } else if (id == R.id.nav_recorrido) {
 
         } else if (id == R.id.nav_configuracion) {
-
-            EscanerFragment escanerFragment = new EscanerFragment();
-            fragmentTransaction.replace(R.id.fragment_container, escanerFragment);
-            fragmentTransaction.commit();
+            //TODO: EL fragment EscanerFragment no tiene opcion de navegacion, por lo que lo puse aqui...
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, new EscanerFragment())
+                    .commit();
 
         } else if (id == R.id.nav_acerca_de) {
 
@@ -111,10 +109,9 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_inicio){
 
-            getSupportActionBar().setTitle("NOMBRE");
-            MainFragment mainFragment = new MainFragment();
-            fragmentTransaction.replace(R.id.fragment_container, mainFragment);
-            fragmentTransaction.commit();
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, new MainFragment())
+                    .commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

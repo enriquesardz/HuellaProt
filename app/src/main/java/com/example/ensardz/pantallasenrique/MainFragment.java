@@ -1,6 +1,7 @@
 package com.example.ensardz.pantallasenrique;
 
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -26,6 +27,11 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+        Activity mainActivity = getActivity();
+        if(mainActivity instanceof MainActivity){
+            ((MainActivity)getActivity()).getSupportActionBar().setTitle("NOMBRE");
+        }
 
         View fragmentMain = inflater.inflate(R.layout.fragment_main, container, false);
         ImageButton fab = (ImageButton) fragmentMain.findViewById(R.id.fab);
