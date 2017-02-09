@@ -27,6 +27,7 @@
                 android:id="@+id/fecha_textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:text="Miercoles 23 de enero 2017"/>
         </LinearLayout>
 
@@ -38,12 +39,12 @@
             android:layout_weight="2"
             android:layout_margin="16dp">
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
                 <Button
                     android:id="@+id/recorrido_button"
-                    android:layout_width="260dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_menu_camera"
                     android:text="Iniciar Recorrido"
@@ -54,13 +55,13 @@
                     />
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
 
                 <Button
                     android:id="@+id/agregar_maestro_button"
-                    android:layout_width="260dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_menu_camera"
                     android:text="Agregar maestro"
@@ -70,12 +71,12 @@
                     />
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
                 <Button
                     android:id="@+id/nuevo_reporte_button"
-                    android:layout_width="260dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_menu_camera"
                     android:text="Nuevo Reporte"
